@@ -1,0 +1,14 @@
+manager.cfg
+*.pyc
+.vscode/settings.json
+.idea
+.idea/misc.xml
+.vscode/
+Pipfile.lock
+venv/
+ADwebmanager.ini
+ADwebmanager.sock
+config-nginx.conf
+config-uwsgi.ini
+wsgi.py
+.env
