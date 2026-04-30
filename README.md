@@ -34,8 +34,10 @@ This project started as a fork of samba4-manager, created by Stéphane Graber an
 ## 🔧 Installation & Setup
 
 ### 1. Clone the Repository
+```sh
 git clone https://github.com/subhankar505s/Active-directory-webManager.git
 cd Active-directory-webManager
+```
 
 ### 2. Create Environment File
 
