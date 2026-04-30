@@ -38,16 +38,21 @@ git clone https://github.com/subhankar505s/Active-directory-webManager.git
 cd Active-directory-webManager
 
 ### 2. Create Environment File
+
 cp .env.example .env
 
-Edit .env:
-SECRET_KEY=your_random_secret_key
-LDAP_DOMAIN=your.domain.com
-SEARCH_DN=DC=your,DC=domain,DC=com
-LDAP_SERVER=192.168.x.x
-DEBUG=True
-USE_LOGGING=True
-ADMIN_GROUP=Domain Admins
+* Create the .env file in the root directory
+  * Put a random string in SECRET\_KEY**
+  * Set LDAP\_DOMAIN to your Directory domain
+  * Set SEARCH\_DN to your Directory LDAP search base
+  * Set LDAP\_SERVER to your Domain Controller IP
+  * Use DEBUG = True if you want the test server to immediately reload after changes
+  * Set USE_LOGGING = True if you want to log to files and console, false logs to console only
+  * Set ADMIN\_GROUP to the security group with read/write permission (default should be Domain Admins)
+* Create settings.py to configure**
+* ADD to TREE\_BLACKLIST the containers you want to hide in the root directory
+* Add attribute pairs to SEARCH\_ATTRS and TREE\_ATTRIBUTES to customize the tree view
+
 
 ### 3. Create settings.py
 Create a settings.py file:
