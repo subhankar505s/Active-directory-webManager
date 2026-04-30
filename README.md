@@ -53,6 +53,18 @@ DEBUG=True
 USE_LOGGING=True
 ADMIN_GROUP=Domain Admins
 ```
+### To Generate Strong SECRET_KEY
+Run:
+```sh
+python3 -c "import secrets; print(secrets.token_hex(32))"
+```
+Example output:
+```sh
+4c9d4a0b5f2e3d6f7a8b9c0d11223344556677889900aabbccddeeff00112233
+```
+Paste it into:
+SECRET_KEY= change_this_to_random_secret_key
+
 
 ### 3. Create settings.py
 Create a settings.py file:
