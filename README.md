@@ -168,6 +168,14 @@ http://localhost:8080
 ## 🧪 Development Mode
 Set DEBUG=True in .env for auto reload
 
+# 📸 Screenshots
+
+## DASHBOARD
+
+<p align="center">
+  <img src="./screenshots/Auth.png" width="100%">
+</p>
+
 ## 🤝 Contributing
 Contributions are always appreciated!
 1. Fork the repository
